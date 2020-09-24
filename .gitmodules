@@ -1,3 +1,3 @@
-  [submodule "app"]
-	path = app
+  [submodule "Aplicativo do Projeto Clínica"]
+	path = app-clinica
 	url = https://github.com/FelipeGalvao1/projeto-clinica-app
