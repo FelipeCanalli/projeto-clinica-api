@@ -93,22 +93,22 @@ class Paciente {
 
                 //  --------------------------------- //
 
-    public function login(){
-        $query = "select nome,date_format(nascimento,'%d/%m/%Y') as nascimento, sexo, email, telefone from tbpaciente where usuario=:us and senha=:sh";
-    
+    public function logar(){
+        $query = "select idpaciente, nome,date_format(nascimento,'%d/%m/%Y') as nascimento,sexo,email,telefone,usuario from tbpaciente where usuario=:u and senha=:s";
+
         $stmt=$this->conexao->prepare($query);
 
-        $this->senha = md5($this->senha);
+        $this->senha = md5 ($this->senha);
 
-        $stmt->bindParam(":us",$this->usuario);
-        $stmt->bindParam(":sh",$this->senha);
-        
-        if($stmt->execute()){
-            return true;
-        }else{
-            return false;
-        }
+        $stmt->bindParam(":u",$this->usuario);
+        $stmt->bindParam(":s",$this->senha);
+
+        $stmt->execute();
+
+        return $stmt;
     }
+
+            //  --------------------------------- //
 
 }
 
