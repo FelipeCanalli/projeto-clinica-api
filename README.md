@@ -10,3 +10,7 @@
 | [/db](https://github.com/FelipeGalvao1/app-loja-php/tree/master/db) | Scripts do banco de dados|
 | [/domain](https://github.com/FelipeGalvao1/app-loja-php/tree/master/domain) | Responsável por guardar as funções do CRUD para cada tabela |
 | [/service](https://github.com/FelipeGalvao1/app-loja-php/tree/master/service/) | Onde é guardado a parte de transformação de dados |
+#
+<p align="center">
+  <img src="./img/aplicacao.gif" width="40%"  /> 
+</p>
